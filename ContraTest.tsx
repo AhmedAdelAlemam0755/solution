@@ -23,10 +23,10 @@ const UserProfile = ({ data }) => {
     </>
   );
 };
-const UserProfileList = () => {
+const UserProfileList = () => (
   <>
     <SuspensefulUserProfile userId={1} />
     <SuspensefulUserProfile userId={2} />
     <SuspensefulUserProfile userId={3} />
   </>
-};
+);
