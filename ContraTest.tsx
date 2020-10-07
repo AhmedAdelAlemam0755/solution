@@ -3,7 +3,7 @@
 * Assume fetchUserProfile exists elsewhere.
 */
 import { Suspense, useState, useEffect } from 'react';
-import { useFragment } from 'react-relay/hooks';
+
 const SuspensefulUserProfile = ({ userId }) => {
   const [data, setData] = useState({});
   useEffect(() => {
