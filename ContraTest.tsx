@@ -22,7 +22,7 @@ const SuspensefulUserProfile = ({ userId }) => {
     fetchUserProfile(userId).then((profile) => setData(profile));
   }, [userId, setData])
   return (
-    <Suspense>
+    <Suspense fallback={<h1>Loading Data...</h1>}>
       <UserProfile data={data} />
     </Suspense>
   );
